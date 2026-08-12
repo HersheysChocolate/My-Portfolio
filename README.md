@@ -1,0 +1,1 @@
+Built a responsive personal portfolio website from scratch using HTML, CSS, and JavaScript, featuring dark/light mode, interactive project buttons, and responsive desktop/mobile layouts. Deployed using GitHub Pages.
