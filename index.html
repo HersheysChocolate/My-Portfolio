@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+    🌙
+</button>
+    </nav>
+
+  <header id="home" class="hero">
+    <h1>Hi, I'm Harsh! 👋</h1>
+
+    <h2>Student • Developer • Creator</h2>
+
+    <p>I build projects and learn to code.</p>
+
+    <a href="#projects" class="hero-button">View My Projects 🚀</a>
+</header>
+
+    <section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I'm a student and beginner developer who enjoys building
+        apps and websites while learning how technology works.
+    </p>
+
+    <p>
+    I started with <strong>Python</strong> and am now exploring
+    <strong>HTML, CSS, and JavaScript</strong> to create my own projects.
+</p>
+
+</section>
+
+    <section id="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">🐍 Python</div>
+        <div class="skill">🌐 HTML</div>
+        <div class="skill">🎨 CSS</div>
+        <div class="skill">⚡ JavaScript</div>
+        <div class="skill">🎨 Figma</div>
+        <div class="skill">🖼️ Canva</div>
+
+    </div>
+
+</section>
+
+    <section id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project">
+            <h3>🐍 Python Student Utility</h3>
+            <p>A Python utility app that I built while learning programming fundamentals.</p>
+            <p class="tech">Python</p>
+            <a href="https://github.com/HersheysChocolate/Student-Utility-App.git"
+               target="_blank"
+               class="project-btn">
+               View Project
+           </a>
+        </div>
+
+        <div class="project">
+            <h3>🌐 My Portfolio</h3>
+            <p>My personal portfolio website built with HTML, CSS, and JavaScript.</p>
+            <p class="tech">HTML • CSS • JavaScript</p>
+           <a href="https://github.com/HersheysChocolate/My-Portfolio.git"
+   target="_blank"
+   class="project-btn">
+    View Code
+</a>
+            
+    
+        </div>
+
+ <div class="project">
+    <h3>🧮 JavaScript Calculator</h3>
+
+    <p>
+        A simple interactive calculator built using HTML, CSS and JavaScript.
+    </p>
+
+    <p class="tech">
+        HTML • CSS • JavaScript
+    </p>
+
+    <a href="#calculator" class="project-btn">
+        Try It
+    </a>
+</div>
+
+<div class="project">
+    <h3>📋JavaScript To-Do List</h3>
+
+    <p>
+        An interactive task manager built using HTML, CSS and JavaScript.
+    </p>
+
+    <p class="tech">
+        HTML • CSS • JavaScript
+    </p>
+
+    <a href="#todo" class="project-btn">
+        Try It
+    </a>
+</div>
+
+<p id="projectMessage"></p>
+
+</div>
+    </section>
+
+    <section id="calculator">
+
+    <h2>JavaScript Calculator</h2>
+
+    <div class="calculator">
+
+        <input type="text" id="display" readonly>
+
+        <div class="calculator-buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">⌫</button>
+            <button onclick="appendValue('/')">÷</button>
+            <button onclick="appendValue('*')">×</button>
+
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('-')">−</button>
+
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('+')">+</button>
+
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="calculate()">=</button>
+
+            <button onclick="appendValue('0')" class="zero">0</button>
+            <button onclick="appendValue('.')">.</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="todo">
+
+    <h2>JavaScript To-Do List</h2>
+
+    <p class="todo-subtitle">
+    Plan your tasks, stay organized, and get things done.
+</p>
+
+    <div class="todo-container">
+
+        <div class="todo-input">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task..."
+            >
+
+            <button id="addTask">
+                Add
+            </button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <button id="clearTasks" class="clear-tasks">
+            Clear All
+        </button>
+
+    </div>
+
+</section>
+
+   <section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>
+        Want to get in touch? You can reach me through the links below.
+    </p>
+
+    <div class="contact-links">
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=harsh36578@gmail.com"
+   target="_blank"
+   class="contact-button">
+    📧 Email Me
+</a>
+
+        <a href="https://github.com/HersheysChocolate"
+           target="_blank"
+           class="contact-button">
+            💻 GitHub
+        </a>
+
+    </div>
+
+</section>
+
+    <script src="script.js"></script>
+
+    <!-- Portfolio update -->
+     
+</body>
+</html>
